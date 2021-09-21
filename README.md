@@ -39,7 +39,7 @@ yarn build
       - [ ] Details
       - [ ] Table
     - [ ] Delivery Query
-    - [ ] Footer
+    - [x] Footer
     - [ ] Scroll Up
 
 # Bilgi

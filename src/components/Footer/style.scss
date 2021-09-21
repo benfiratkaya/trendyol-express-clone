@@ -1,0 +1,38 @@
+.footer {
+  width: 100%;
+  margin-bottom: 30px;
+
+  .customer-service {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:before, &:after {
+      content: "";
+      height: 1px;
+      background-color: #d8d8d8;
+      flex: 1 1;
+    }
+
+    .customer-service-icon {
+      margin-right: 10px;
+      margin-left: 40px;
+    }
+    .customer-service-content {
+      margin-right: 40px;
+
+      .customer-service-title {
+        color: #6e7787;
+        font-size: 14px;
+        font-weight: 500;
+        text-transform: uppercase;
+      }
+
+      .customer-service-phone-number {
+        color: #273142;
+        font-size: 24px;
+        font-weight: 500;
+      }
+    }
+  }
+}
