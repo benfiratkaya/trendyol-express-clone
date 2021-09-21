@@ -7,6 +7,9 @@ import reportWebVitals from "./utils/reportWebVitals";
 
 import App from "./components/App";
 
+import "./styles/reset.scss";
+import "./styles/main.scss";
+
 ReactDOM.render(
   <Provider store={store}>
     <App />

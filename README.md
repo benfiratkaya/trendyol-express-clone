@@ -32,7 +32,7 @@ yarn build
 # Yapılacaklar
 
 - [ ] Components
-    - [ ] Logo
+    - [x] Logo
     - [ ] TAB
     - [ ] Delivery Progress
     - [ ] Delivery Details

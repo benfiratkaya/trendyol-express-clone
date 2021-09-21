@@ -1,5 +1,13 @@
+import Logo from "../Logo";
+
+import "./style.scss";
+
 const App = () => {
-  return (<div>hey!</div>);
+  return (
+    <div className="app">
+      <Logo />
+    </div>
+  );
 };
 
 export default App;
