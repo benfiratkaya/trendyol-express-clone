@@ -33,7 +33,7 @@ yarn build
 
 - [ ] Components
     - [x] Logo
-    - [ ] TAB
+    - [x] TAB
     - [ ] Delivery Progress
     - [ ] Delivery Details
       - [ ] Details
