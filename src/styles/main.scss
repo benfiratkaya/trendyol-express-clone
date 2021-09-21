@@ -29,6 +29,36 @@ button {
   transition: all .2s ease-in-out;
 }
 
+.search-input {
+  display: flex;
+  width: 100%;
+
+  input {
+    width: 100%;
+    padding: 15px;
+    font-size: 15px;
+    font-weight: 500;
+    border: 1px solid #d5dde5;
+    border-radius: 10px;
+    margin-right: 20px;
+
+    &:focus {
+      outline: none;
+      border-color: #f16623;
+    }
+  }
+
+  button {
+    padding: 0 3em;
+    background-color: rgb(241, 102, 35);
+
+    &:disabled {
+      cursor: no-drop;
+      background-color: rgb(213, 221, 229);
+    }
+  }
+}
+
 .query-input {
   width: 100%;
   position: relative;
@@ -59,6 +89,26 @@ button {
     &:disabled {
       cursor: no-drop;
       background-color: rgb(213, 221, 229);
+    }
+  }
+}
+
+.card {
+  width: 100%;
+  padding: 30px;
+  border-radius: 20px;
+  background-color: #f4f7fa;
+}
+
+.form {
+  .form-group {
+    .title {
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 24px;
     }
   }
 }

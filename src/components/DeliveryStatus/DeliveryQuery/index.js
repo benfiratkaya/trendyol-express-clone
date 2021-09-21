@@ -7,7 +7,7 @@ const DeliveryQuery = () => {
 
   return (
     <div className="delivery-query">
-      <div className="query-input">
+      <div className="search-input">
         <input type="text" placeholder="Teslimat Numarası Ile Sorgula" value={deliveryNo}
                onChange={(e) => setDeliveryNo(e.target.value)}/>
         <button disabled={deliveryNo.length < 8 || isNaN(deliveryNo)}>Sorgula</button>

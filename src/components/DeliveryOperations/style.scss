@@ -1,0 +1,39 @@
+.delivery-operations {
+  width: 100%;
+  margin: 20px 0;
+
+  .react-tabs__tab-list {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+
+  .react-tabs__tab {
+    display: flex;
+    align-items: center;
+    padding: .8em 2em;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    margin-right: 10px;
+    cursor: pointer;
+    color: #afbbca;
+    font-weight: 500;
+
+    .icon {
+      margin-right: 10px;
+    }
+
+    &[aria-selected="true"] {
+      color: #f16623;
+      background-color: #fff;
+
+      .icon svg path {
+        fill: #f16623;
+      }
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
