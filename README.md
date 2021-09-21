@@ -36,11 +36,11 @@ yarn build
     - [x] TAB
     - [ ] Delivery Progress
     - [ ] Delivery Details
-      - [ ] Details
-      - [ ] Table
-    - [ ] Delivery Query
+        - [ ] Details
+        - [ ] Table
+    - [x] Delivery Query
     - [x] Footer
-    - [ ] Scroll Up
+    - [x] Scroll Up
 
 # Bilgi
 
