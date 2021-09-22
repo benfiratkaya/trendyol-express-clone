@@ -1,0 +1,55 @@
+.delivery-steps {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+
+  .step {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex: 1 1;
+    position: relative;
+
+    &:not(&:last-child) {
+      &:after {
+        content: '';
+        position: absolute;
+        top: 40px;
+        left: 50%;
+        height: 4px;
+        width: 100%;
+        background-color: #f16623;
+        z-index: -1;
+      }
+    }
+
+    &:last-child {
+      .circle {
+        background-color: #0bc15c;
+      }
+    }
+
+    .circle {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 80px;
+      height: 80px;
+      background-color: #f16623;
+      border-radius: 50%;
+
+      .icon {
+        fill: #ffffff;
+      }
+    }
+
+    .title {
+      margin-top: 20px;
+      font-size: 15px;
+      font-weight: 500;
+      color: #6e7787;
+    }
+  }
+}
