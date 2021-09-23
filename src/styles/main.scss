@@ -1,3 +1,5 @@
+@import "src/styles/media";
+
 * {
   box-sizing: border-box;
 }
@@ -33,6 +35,10 @@ button {
   display: flex;
   width: 100%;
 
+  @include lt-sm {
+    flex-direction: column;
+  }
+
   input {
     width: 100%;
     padding: 15px;
@@ -51,6 +57,11 @@ button {
   button {
     padding: 0 3em;
     background-color: rgb(241, 102, 35);
+
+    @include lt-sm {
+      padding: 8px 16px;
+      margin-top: 10px;
+    }
 
     &:disabled {
       cursor: no-drop;

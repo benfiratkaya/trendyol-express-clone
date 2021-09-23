@@ -1,3 +1,5 @@
+@import "src/styles/media";
+
 .footer {
   width: 100%;
   margin-bottom: 30px;
@@ -17,9 +19,18 @@
     .customer-service-icon {
       margin-right: 10px;
       margin-left: 40px;
+
+      @include lt-sm {
+        margin-left: 15px;
+      }
     }
+
     .customer-service-content {
       margin-right: 40px;
+
+      @include lt-sm {
+        margin-right: 15px;
+      }
 
       .customer-service-title {
         color: #6e7787;

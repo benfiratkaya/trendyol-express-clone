@@ -17,6 +17,12 @@ const DeliveryTable = () => {
         <li>fi** (KENDİSİ)</li>
         <li>Toprak Şube</li>
       </ul>
+      <ul className="table-body">
+        <li>22.09.2021 11:57</li>
+        <li>Teslim Edildi</li>
+        <li>fi** (KENDİSİ)</li>
+        <li>Toprak Şube</li>
+      </ul>
       <ScrollUp/>
     </div>
   );

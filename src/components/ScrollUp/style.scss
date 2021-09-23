@@ -1,3 +1,5 @@
+@import "src/styles/media";
+
 .scroll-up {
   position: absolute;
   right: -85px;
@@ -11,4 +13,8 @@
   border-radius: 40px;
   background-color: #273142;
   cursor: pointer;
+
+  @include lt-sm {
+    display: none;
+  }
 }

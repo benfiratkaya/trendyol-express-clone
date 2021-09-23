@@ -1,4 +1,4 @@
-import {scrollUp} from "../helpers/scrollUp";
+import {scrollUp} from "../../helpers/scrollUp";
 
 import "./style.scss";
 
