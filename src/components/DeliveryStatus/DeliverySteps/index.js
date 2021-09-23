@@ -21,7 +21,7 @@ const DeliverySteps = () => {
         </div>
         <div className="title">2.Transfer Merkezinde</div>
       </div>
-      <div className="step active">
+      <div className="step">
         <div className="circle">
           <svg className="icon" xmlns="http://www.w3.org/2000/svg" width="38" height="32" viewBox="0 0 38 32">
             <path
@@ -30,7 +30,7 @@ const DeliverySteps = () => {
         </div>
         <div className="title">3.Teslimat Şubesinde</div>
       </div>
-      <div className="step active">
+      <div className="step">
         <div className="circle">
           <svg className="icon" xmlns="http://www.w3.org/2000/svg" width="44" height="33" viewBox="0 0 44 33">
             <path
@@ -39,7 +39,7 @@ const DeliverySteps = () => {
         </div>
         <div className="title">4.Kurye Dağıtımda</div>
       </div>
-      <div className="step active">
+      <div className="step">
         <div className="circle">
           <svg className="icon" xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38">
             <path
