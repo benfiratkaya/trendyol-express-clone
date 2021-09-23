@@ -45,7 +45,9 @@
     border-bottom-right-radius: 10px;
 
     &:nth-child(2n) {
-      background-color: #eff0f1;
+      @include lt-sm {
+        background-color: #eff0f1;
+      }
     }
 
     li {
