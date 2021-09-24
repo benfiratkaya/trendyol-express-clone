@@ -5,7 +5,7 @@ const Footer = () => {
     <div className="footer">
       <div className="links">
         <a href="https://github.com/benfiratkaya/trendyol-express-clone" target="_blank" rel="noreferrer">
-          {"\<\Coded by: Fırat Kaya />"}
+          Coded by: Fırat Kaya
         </a>
       </div>
       <div className="customer-service">
