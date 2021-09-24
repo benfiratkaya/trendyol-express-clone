@@ -14,7 +14,7 @@
     flex: 1 1;
     position: relative;
 
-    &.active {
+    &[data-active="true"] {
       .circle {
         background-color: #f16623;
         border-color: #f16623;
@@ -42,13 +42,13 @@
         }
       }
 
-      &.active:before {
+      &[data-active="true"]:before {
         background-color: #f16623;
       }
     }
 
     &:last-child {
-      &.active .circle {
+      &[data-active="true"] .circle {
         background-color: #0bc15c;
         border-color: #0bc15c;
 

@@ -30,8 +30,8 @@ const DeliveryOperations = () => {
           <Tab>
             <div className="icon">
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21">
-                <g fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
-                  <g stroke="#AFBBCA" stroke-width="2">
+                <g fill="none" fillRule="evenodd" strokeLinecap="round" strokeLinejoin="round">
+                  <g stroke="#AFBBCA" strokeWidth="2">
                     <g transform="translate(-764 -275) translate(765 276)">
                       <rect width="18" height="17" y="2" rx="2"></rect>
                       <path d="M13 0L13 4M5 0L5 4M0 8L18 8"></path>
@@ -47,33 +47,21 @@ const DeliveryOperations = () => {
         <TabPanel>
           <div className="form">
             <div className="form-group">
-              <span className="title">Teslimat Numaranızı Girin</span>
-              <div className="search-input">
-                <input type="text" placeholder="Teslimat Numarası"/>
-                <button disabled={true}>Ara</button>
-              </div>
+              Komşuma Bırak
             </div>
           </div>
         </TabPanel>
         <TabPanel>
           <div className="form">
             <div className="form-group">
-              <span className="title">Teslimat Numaranızı Girin</span>
-              <div className="search-input">
-                <input type="text" placeholder="Teslimat Numarası"/>
-                <button disabled={true}>Ara</button>
-              </div>
+              Farklı Adrese Gelsin
             </div>
           </div>
         </TabPanel>
         <TabPanel>
           <div className="form">
             <div className="form-group">
-              <span className="title">Teslimat Numaranızı Girin</span>
-              <div className="search-input">
-                <input type="text" placeholder="Teslimat Numarası"/>
-                <button disabled={true}>Ara</button>
-              </div>
+              İstediğim Zaman Gelsin
             </div>
           </div>
         </TabPanel>

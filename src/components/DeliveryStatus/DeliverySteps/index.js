@@ -1,9 +1,15 @@
+import {connect} from "react-redux";
+
+import {operationalStep} from "../../../helpers/operationalStep";
+
 import "./style.scss";
 
-const DeliverySteps = () => {
+const DeliverySteps = ({operationalState}) => {
+  const OPERATION_STEP = operationalStep(operationalState);
+
   return (
     <div className="delivery-steps">
-      <div className="step active">
+      <div className="step" data-active={OPERATION_STEP >= 1}>
         <div className="circle">
           <svg className="icon" xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38">
             <path
@@ -12,7 +18,7 @@ const DeliverySteps = () => {
         </div>
         <div className="title">1.Gönderi Alındı</div>
       </div>
-      <div className="step active">
+      <div className="step" data-active={OPERATION_STEP >= 2}>
         <div className="circle">
           <svg className="icon" xmlns="http://www.w3.org/2000/svg" width="47" height="37" viewBox="0 0 47 37">
             <path
@@ -21,7 +27,7 @@ const DeliverySteps = () => {
         </div>
         <div className="title">2.Transfer Merkezinde</div>
       </div>
-      <div className="step">
+      <div className="step" data-active={OPERATION_STEP >= 3}>
         <div className="circle">
           <svg className="icon" xmlns="http://www.w3.org/2000/svg" width="38" height="32" viewBox="0 0 38 32">
             <path
@@ -30,7 +36,7 @@ const DeliverySteps = () => {
         </div>
         <div className="title">3.Teslimat Şubesinde</div>
       </div>
-      <div className="step">
+      <div className="step" data-active={OPERATION_STEP >= 4}>
         <div className="circle">
           <svg className="icon" xmlns="http://www.w3.org/2000/svg" width="44" height="33" viewBox="0 0 44 33">
             <path
@@ -39,7 +45,7 @@ const DeliverySteps = () => {
         </div>
         <div className="title">4.Kurye Dağıtımda</div>
       </div>
-      <div className="step">
+      <div className="step" data-active={OPERATION_STEP >= 5}>
         <div className="circle">
           <svg className="icon" xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38">
             <path
@@ -52,4 +58,10 @@ const DeliverySteps = () => {
   );
 };
 
-export default DeliverySteps;
+const mapStateToProps = (state) => {
+  return {
+    operationalState: state.delivery.data.operationalState
+  };
+};
+
+export default connect(mapStateToProps)(DeliverySteps);

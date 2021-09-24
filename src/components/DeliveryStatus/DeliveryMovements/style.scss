@@ -9,17 +9,14 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-
-    @include lt-sm {
-      padding-left: 20px;
-      padding-right: 20px;
-    }
+    padding: 20px;
   }
 
   .delivery-info {
     width: 100%;
     background-color: #fff;
     padding: 30px;
+    border-radius: 10px;
 
     .delivery-no {
       width: 100%;

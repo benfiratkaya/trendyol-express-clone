@@ -1,8 +1,11 @@
+import {connect} from "react-redux";
+
 import ScrollUp from "../../../ScrollUp";
 
 import "./style.scss";
+import TableItem from "./TableItem";
 
-const DeliveryTable = () => {
+const DeliveryTable = ({trackingHistoryList}) => {
   return (
     <div className="delivery-table">
       <ul className="table-head">
@@ -11,21 +14,23 @@ const DeliveryTable = () => {
         <li>Açıklama</li>
         <li>Lokasyon</li>
       </ul>
-      <ul className="table-body">
-        <li>22.09.2021 11:57</li>
-        <li>Teslim Edildi</li>
-        <li>fi** (KENDİSİ)</li>
-        <li>Toprak Şube</li>
-      </ul>
-      <ul className="table-body">
-        <li>22.09.2021 11:57</li>
-        <li>Teslim Edildi</li>
-        <li>fi** (KENDİSİ)</li>
-        <li>Toprak Şube</li>
-      </ul>
+      {trackingHistoryList.map(item => (
+        <TableItem
+          actionDate={item.actionDate}
+          operationalState={item.operationalState}
+          description={item.description}
+          location={item.location}
+        />
+      ))}
       <ScrollUp/>
     </div>
   );
 };
 
-export default DeliveryTable;
+const mapStateToProps = (state) => {
+  return {
+    trackingHistoryList: state.delivery.data.trackingHistoryList
+  };
+};
+
+export default connect(mapStateToProps)(DeliveryTable);

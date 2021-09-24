@@ -4,7 +4,9 @@ const initialState = {
   fetching: false,
   fetched: false,
   data: {},
-  error: {},
+  error: {
+    status: false
+  },
 };
 
 const deliveryReducer = (state = initialState, action) => {
@@ -23,7 +25,10 @@ const deliveryReducer = (state = initialState, action) => {
         fetching: false,
         fetched: false,
         data: {},
-        error: action.payload,
+        error: {
+          status: true,
+          ...action.payload
+        },
       };
     case t.FETCH_DELIVERY_FULFILLED:
       return {
