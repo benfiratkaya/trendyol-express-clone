@@ -31,17 +31,23 @@ yarn build
 
 # Yapılacaklar
 
-- [ ] Components
+- [x] Components
     - [x] Logo
     - [x] TAB
-    - [ ] Delivery Progress
-    - [ ] Delivery Details
-        - [ ] Details
-        - [ ] Table
+    - [x] Delivery Progress
+    - [x] Delivery Details
+        - [x] Details
+        - [x] Table
     - [x] Delivery Query
     - [x] Footer
     - [x] Scroll Up
 
 # Bilgi
 
-Hazırlanıyor...
+Proje bitmiştir. Orijinal sitede kullanımı zorlaştıran şeyleri yeniden düzenledim. Örneğin URL'ye teslimat numarasını
+parametre olarak göndermezsek "Gönderi Bulunamadı" şeklinde bir hata çıkıyor. Ben ise gönderi bulunamazsa da kullanıcıya
+bir sorgu ekranı gösteriyorum. Bu sayede kullanıcı hatalı giriş yapsa da sorgu yapabilceği bir kullanım sunuyorum.
+"Gönderi İşlemleri" kısmında ise bir kullanışsızlık hissettim. Kullanıcı zaten sorgusunu yaptığı teslimatı görüntülerken
+kullanıcıdan tekrar teslimat no isteniyor. Gereksiz bulduğum için kullanıcıya teslimat no yazdırmadan direkt işlemleri
+gösteriyorum. Proje API'ye bağlı canlı veriler gösteriyor fakat API dökümanı elimde olmadığı için elimdeki veriler ile
+API'yi entegre ettim.
