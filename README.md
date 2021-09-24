@@ -9,7 +9,7 @@
 
 # Demo
 
-[trendyol-express-clone.netlify.app/](trendyol-express-clone.netlify.app/)
+[https://trendyol-express-clone.netlify.app/](https://trendyol-express-clone.netlify.app/)
 
 # Proje Kurulumu
 
