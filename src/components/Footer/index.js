@@ -3,6 +3,11 @@ import "./style.scss";
 const Footer = () => {
   return (
     <div className="footer">
+      <div className="links">
+        <a href="https://github.com/benfiratkaya/trendyol-express-clone" target="_blank" rel="noreferrer">
+          {"\<\Coded by: Fırat Kaya />"}
+        </a>
+      </div>
       <div className="customer-service">
         <div className="customer-service-icon">
           <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
