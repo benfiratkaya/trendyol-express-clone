@@ -7,6 +7,10 @@
 
 ---
 
+# Demo
+
+[trendyol-express-clone.netlify.app/](trendyol-express-clone.netlify.app/)
+
 # Proje Kurulumu
 
 Proje React.js kullanılarak yapılmıştır. Paket yöneticisi olarak yarn kullanılmaktadır.
