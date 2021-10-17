@@ -4,8 +4,8 @@ import {connect} from "react-redux";
 import {fetchDelivery} from "../../redux/actions/delivery";
 
 import MainTab from "./MainTab";
-import DeliveryLoading from "../Delivery/DeliveryLoading";
-import DeliveryNotFound from "../Delivery/DeliveryNotFound";
+import DeliveryLoading from "./Loading";
+import DeliveryNotFound from "./NotFound";
 
 const Delivery = ({delivery, fetchDelivery}) => {
   const deliveryToken = new URLSearchParams(window.location.search).get("token");

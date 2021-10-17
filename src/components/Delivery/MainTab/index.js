@@ -1,6 +1,6 @@
 import {useState} from 'react';
-import DeliveryStatus from "../DeliveryStatus";
-import DeliveryOperations from "../DeliveryOperations";
+import DeliveryStatus from "../Status";
+import DeliveryOperations from "../Operations";
 
 import "./style.scss";
 
