@@ -1,6 +1,6 @@
 import {connect} from "react-redux";
 
-import ScrollUp from "../../../ScrollUp";
+import ScrollUp from "../../../../ScrollUp";
 
 import "./style.scss";
 import TableItem from "./TableItem";

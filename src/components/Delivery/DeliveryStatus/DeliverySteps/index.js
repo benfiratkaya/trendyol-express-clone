@@ -1,6 +1,6 @@
 import {connect} from "react-redux";
 
-import {operationalStep} from "../../../helpers/operationalStep";
+import {operationalStep} from "../../../../helpers/operationalStep";
 
 import "./style.scss";
 

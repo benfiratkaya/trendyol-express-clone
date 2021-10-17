@@ -1,4 +1,4 @@
-import {getDateFromUnix} from "../../../../../helpers/getDate";
+import {getDateFromUnix} from "../../../../../../helpers/getDate";
 
 const TableItem = ({actionDate, operationalState, description, location}) => {
   let operationalStateText = {

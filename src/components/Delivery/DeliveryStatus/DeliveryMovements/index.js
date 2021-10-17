@@ -3,7 +3,7 @@ import {connect} from "react-redux";
 
 import DeliveryTable from "./DeliveryTable";
 
-import {formatDate, getDateFromUnix} from "../../../helpers/getDate";
+import {formatDate, getDateFromUnix} from "../../../../helpers/getDate";
 
 import "./style.scss";
 
