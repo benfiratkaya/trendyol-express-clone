@@ -1,0 +1,85 @@
+@import "../../../../../styles/media";
+
+.delivery-table {
+  position: relative;
+  width: 100%;
+  margin-top: 30px;
+
+  .table-head {
+    display: flex;
+    color: #fff;
+    background-color: #273142;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+    li {
+      display: flex;
+      flex: 1 0;
+      align-items: center;
+      padding: 1.3em;
+      font-size: 13px;
+      text-transform: uppercase;
+      border-right: 1px solid #6e7787;
+
+      &:last-child {
+        border-right: 0;
+
+        @include lt-sm {
+          display: none;
+        }
+      }
+
+      &:nth-last-child(2) {
+        @include lt-sm {
+          border-right: 0;
+        }
+      }
+    }
+  }
+
+  .table-body {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #fff;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+    &:nth-child(2n) {
+      @include lt-sm {
+        background-color: #eff0f1;
+      }
+    }
+
+    li {
+      display: flex;
+      flex: 1 0;
+      align-items: center;
+      order: 2;
+      padding: 1.3em;
+      font-size: 13px;
+      border-right: 1px solid #f4f7fa;
+      border-bottom: 1px solid #f4f7fa;
+
+      @include lt-sm {
+        font-size: 11px;
+      }
+
+      &:last-child {
+        border-right: 0;
+
+        @include lt-sm {
+          order: 1;
+          flex: 100% 1;
+        }
+
+        &:before {
+          @include lt-sm {
+            content: 'Lokasyon:';
+            color: #f16623;
+            margin-right: 2px;
+          }
+        }
+      }
+    }
+  }
+}

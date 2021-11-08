@@ -1,0 +1,89 @@
+@import "../../../../styles/media";
+
+.delivery-movements {
+  margin-top: 20px;
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 20px;
+  }
+
+  .delivery-info {
+    width: 100%;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+
+    .delivery-no {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 50px;
+
+      .title {
+        font-size: 13px;
+        color: #6e7787;
+      }
+
+      .content {
+        margin-top: 5px;
+        font-size: 30px;
+        font-weight: 500;
+        color: #f16623;
+      }
+    }
+
+    .delivery-detail {
+      display: flex;
+      flex-wrap: wrap;
+
+      .detail {
+        width: 25%;
+        margin-bottom: 20px;
+
+        @include lt-sm {
+          width: 100%;
+        }
+
+        .title {
+          margin-bottom: 5px;
+          font-size: 13px;
+          color: #6e7787;
+        }
+
+        .content {
+          font-size: 15px;
+          font-weight: 500;
+          color: #273142;
+        }
+      }
+    }
+  }
+
+  .btn-detail {
+    display: block;
+    padding: 15px 50px;
+    background-color: transparent;
+    font-size: 15px;
+    font-weight: 500;
+    color: #f16623;
+    border: 1px solid #f16623;
+    border-radius: 30px;
+    margin-top: 30px;
+    text-transform: uppercase;
+
+    @include lt-sm {
+      width: 100%;
+      font-size: 14px;
+      padding: 10px 30px;
+    }
+
+    &:hover {
+      color: #fff;
+      background-color: #f16623;
+    }
+  }
+}
